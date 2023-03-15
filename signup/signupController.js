@@ -22,7 +22,7 @@ export function signupController(signupElement, showMessage) {
             const redirect =  ()=> {window.location = '/';}
             setInterval(redirect, 5000);
           } catch (error) {
-            showMessage("ERROR FATAL: No se puede contactar con el servidor: "+error.message);
+            showMessage("ERROR FATAL: "+error.message);
           }
     }
   })

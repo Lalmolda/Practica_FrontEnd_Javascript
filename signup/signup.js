@@ -14,9 +14,9 @@ export async function createUser(email, password) {
       }
     })
   
-    // gestion de errores
+    // gestion de errores. EVITA QUE EL API REST NOS DIGA QUE EL USUARIO YA EXISTE, LO ADVIERTO EN EL MENSAJE.
     if (!response.ok) {
-      throw new Error('Error al crear el usuario');
+      throw new Error('Error al crear el usuario. Puede que el nombre de usuario que has usado ya exista.');
     }
   
   }
