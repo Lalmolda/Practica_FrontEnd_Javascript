@@ -6,11 +6,14 @@
 //TODO MONTAR LOGIN Y SIGNUP CON NOTIFICATION CONTROLLER
 import { adController } from "./ad-list/adController.js";
 import { notificationController } from "./notification/notificationController.js";
+import { userController } from "./user-actions/uController.js";
+
 
 const adList = document.querySelector('.ad-list');
-alert(adList);
+const userActions = document.querySelector('.userActions');
  
 const showMessage = notificationController(adList);
 adController(adList, showMessage);
+userController(userActions);
 
 console.log("HOLA DESDE INDEX.JS");
