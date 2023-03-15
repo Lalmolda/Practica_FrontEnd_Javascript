@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up</title>
+  <link rel="stylesheet" href="./ad-list/adStyle.css">
+</head>
+<body>
+  <form id="userCreation">
+    <label for="username">Email</label>
+    <input type="email" name="username" id="username" required>
+    <br>
+
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" minlength="4" required>
+    <br>
+
+    <label for="passwordConfirm">Confirm your password</label>
+    <input type="password" name="passwordConfirm" id="passwordConfirm" minlength="4" required>
+    <br>
+
+    <button type="submit">Crear usuario</button>
+  </form>
+  <br>
+  <section id="notifications"></section>
+  <script type="module" src="./signup/index.js"></script>
+</body>
+</html>
