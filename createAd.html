@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Ad</title>
+</head>
+<body>
+  <h1>Creación de Ad</h1>
+
+  <form id="createAdForm">
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre" id="nombre">
+    <br>
+
+    <label for="description">Descripción</label>
+    <textarea name="adDescription" id="adDescription" cols="30" rows="10"></textarea>
+    <br>
+
+    <label for="precio">Precio</label>
+    <input type="text" name="precio" id="precio">
+    <br>
+
+    <label for="compraVenta">Compra o venta</label>
+    <input type="text" name="compraVenta" id="compraVenta">
+    <br>
+
+    <label for="foto">URL de la Foto</label>
+    <input type="text" name="foto" id="foto">
+    <br>
+
+    <button type="submit">Crear anuncio</button>
+  </form>
+
+  <script type="module" src="./create-ad/index.js"></script>
+</body>
+</html>

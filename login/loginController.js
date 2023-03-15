@@ -1,10 +1,10 @@
 import { loginUser } from './login.js';
 
 export function loginController(loginElement, showMessage){
-
+  //Escuchamos el evento submit y modificamos su comportamiento a nuestras necesidades
   loginElement.addEventListener('submit', (event) => {
-    event.preventDefault();
-
+    event.preventDefault(); //evitamos el comportamiento por defecto del boton submit y lo definimos nosotros.
+    showMessage("Se está intentando logear, por favor, espere...") //GESTIÓN DE CARGA MIENTRAS SE REGISTRA EL USUARIO.
     const emailElement = loginElement.querySelector('#username');
     
     if (!isEmailValid(emailElement.value)) {
@@ -15,8 +15,8 @@ export function loginController(loginElement, showMessage){
   })
 
   async function logUser(loginElement) {
-    const formData = new FormData(loginElement);
-    const username = formData.get('username')
+    const formData = new FormData(loginElement); //asignamos a la variable formdata el nuevo objeto construido con el constructor de la clase FormData, mandandole el elemento formulario del DOM
+    const username = formData.get('username') //usamos el metodo get de FormData
     const password = formData.get('password')
     
     try {

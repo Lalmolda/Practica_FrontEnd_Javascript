@@ -1,5 +1,6 @@
 import { logOut } from "./logout.js";
-
+//Sencillo, elimina el token llamando a la función logout y deslogea, y si algo apsara informa del error.
+//Al deslogear redirige al index.
 export function logOutController (showMessage){
     try{
         logOut();

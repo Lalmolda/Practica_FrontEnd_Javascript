@@ -4,7 +4,7 @@ export function signupController(signupElement, showMessage) {
   //Añadimos la escucha al evento 'submit'que emite el formulario al ser mandado y capturamos ese evento.
   //IMPORTANTE: signupElement es parte del DOM y es el objeto formulario, pasado desde el index. 
   signupElement.addEventListener('submit', async (event) => {
-    console.log("LLEGO A CAPTURAR EL EVENTO");
+    showMessage("Se está procediendo a registrar el usuario, por favor, espere...")
     event.preventDefault(); //lo metemos para prevenir el comportamiento por defecto del formulario, que es el del boton submit, así lo personalizamos.
 
     const emailElement = signupElement.querySelector('#username');
