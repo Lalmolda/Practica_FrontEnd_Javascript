@@ -3,6 +3,7 @@ import { createAd } from "./createAd.js";
 export const createAdController = async (adFormElement, showMessage) => {
     adFormElement.addEventListener('submit', async (event) => {
     event.preventDefault();
+    showMessage("Ten paciencia... se está creando tu anuncio..");
 
     const formData = new FormData(adFormElement);
 
@@ -15,9 +16,11 @@ export const createAdController = async (adFormElement, showMessage) => {
 
     try {
       await createAd(nombre, adDescription, precio, compraVenta, foto);
-      window.location = '/';
+      showMessage("Tu anuncio ha sido creado correctamente!! Redirigiéndote a la página principal en 5s...");
+      const redirect =  ()=> {window.location = '/';}
+      setInterval(redirect, 5000);
     } catch (error) {
-      alert(error)
+      showMessage("ERROR: "+error);
     }
   })
 }

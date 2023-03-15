@@ -15,6 +15,7 @@ export async function loginUser(email, password) {
       }
     })
   
+    //si recibimos response del API REST y no es OK, es que ha habido un error
     if (!response.ok) {
       throw new Error('Error al identificar el usuario')
     }

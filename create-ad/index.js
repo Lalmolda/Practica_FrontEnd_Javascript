@@ -3,7 +3,9 @@ import { notificationController } from "./../notification/notificationController
 
 const token = localStorage.getItem('token')
 const createAdFormElement = document.querySelector('#createAdForm');
-const showMessage = notificationController(createAdFormElement);
+const adNotificationElement = document.querySelector('#adNotification');
+
+const showMessage = notificationController(adNotificationElement);
 
 if (!token) {
     showMessage("TIENES PROHIBIDO EL ACCESO HASTA QUE HAGAS LOGIN ESPABILADO!! SE TE REDIRIGIRÁ EN 3 SEGUNDOS....");
