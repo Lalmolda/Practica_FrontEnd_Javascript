@@ -1,6 +1,4 @@
 export async function loginUser(email, password) {
-  console.log("LLEGO AQUI");
-
     const user = {
       username: email,
       password: password

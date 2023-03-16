@@ -17,7 +17,7 @@ export function signupController(signupElement, showMessage) {
           try {
             await createUser(emailElement.value, passwordElement.value)
             signupElement.reset();
-            showMessage("Usuario creado correctamente");
+            showMessage("Usuario creado correctamente, será redirigido en 5 segundos...");
             //Redirigimos al index.html
             const redirect =  ()=> {window.location = '/';}
             setInterval(redirect, 5000);

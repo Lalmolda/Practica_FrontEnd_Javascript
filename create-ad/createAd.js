@@ -1,5 +1,4 @@
 export const createAd = async (nombre, adDescription, precio, compraVenta, foto) => {
-    alert("ESTOY INTENTANDO CREAR ADD");
     const newAd = {
       nombre: nombre,
       descripcion: adDescription,

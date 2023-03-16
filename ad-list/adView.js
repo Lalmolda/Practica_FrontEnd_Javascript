@@ -1,5 +1,4 @@
 export function buildAdView(ad) {
-    console.log("LLEGO A BUILDADVIEW");
     const newAdElement = document.createElement('article');
     newAdElement.classList.add('ad');
     newAdElement.innerHTML = `
@@ -11,7 +10,6 @@ export function buildAdView(ad) {
         <img src=${ad.foto}>
     </a>
     `;
-    console.log("SOY BUILDVIEW NEWADELEMENT: ");  
 
     return newAdElement;
   }

@@ -1,0 +1,55 @@
+{
+  "users": [
+    {
+      "username": "test@test.com",
+      "password": "$2b$10$oA2KcX1TuZNjOGZezjw.NOGXUIlpbHyi2nGxNRr.WAYURnsTdDuFq",
+      "id": 1
+    },
+    {
+      "username": "usuario2@test.com",
+      "password": "$2b$10$Vt/uwNNdH6U84SVX5AnIZeFW7BSAQ1GqIy09TuF0xPoYfObDarmxW",
+      "id": 2
+    }
+  ],
+  "ads": [
+    {
+      "nombre": "Balón sin marca",
+      "descripcion": "Soy un balón de imitación un poco triste..",
+      "precio": "9",
+      "compraVenta": "venta",
+      "foto": "http://127.0.0.1:8000/balon.jpg",
+      "userId": 1,
+      "updatedAt": "2023-03-15T19:33:14.820Z",
+      "id": 2
+    },
+    {
+      "nombre": "Sofá roñoso",
+      "descripcion": "Compro un sofá roñoso como el de la foto...",
+      "precio": "19",
+      "compraVenta": "compra",
+      "foto": "http://127.0.0.1:8000/sofa.jpg",
+      "userId": 1,
+      "updatedAt": "2023-03-15T19:45:54.299Z",
+      "id": 3
+    },
+    {
+      "nombre": "Ferrari",
+      "descripcion": "Un gran Ferrari",
+      "precio": "20000",
+      "compraVenta": "venta",
+      "foto": "https://cdn-images.motor.es/image/m/800w.webp/fotos-noticias/2022/06/ferrari-nuevos-coches-electricos-202287701-1655143041_1.jpg",
+      "userId": 1,
+      "updatedAt": "2023-03-16T14:18:20.278Z",
+      "id": 4
+    },
+    {
+      "nombre": "PRUEBA DE ERROR",
+      "descripcion": "Un gran Ferrari",
+      "precio": "20000",
+      "compraVenta": "venta",
+      "foto": "https://cdn-images.motor.es/image/m/800w.webp/fotos-noticias/2022/06/ferrari-nuevos-coches-electricos-202287701-1655143041_1.jpg",
+      "userId": 1,
+      "updatedAt": "2023-03-16T14:18:20.278Z"
+    }
+  ]
+}

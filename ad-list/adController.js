@@ -19,7 +19,6 @@ export async function adController(adListElement, showMessage){
 
 function drawAds(ads, adListElement) {
     for (const ad of ads) {
-     console.log("DIBUJO AD EN BUCLE: "+ad.nombre);
       const newAdElement = buildAdView(ad);
       adListElement.appendChild(newAdElement);
     }

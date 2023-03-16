@@ -17,4 +17,4 @@ const showMessage = notificationController(adList);
 adController(adList, showMessage);
 userController(userActions);
 
-console.log("HOLA DESDE INDEX.JS");
+
