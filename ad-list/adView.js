@@ -3,7 +3,7 @@ export function buildAdView(ad) {
     const newAdElement = document.createElement('article');
     newAdElement.classList.add('ad');
     newAdElement.innerHTML = `
-    <a href= "/">
+    <a href= "/ad-detail.html?adId=${ad.id}">
         <p>${ad.nombre}</p>
         <p>${ad.descripcion}</p>
         <p>${ad.precio}</p>
