@@ -22,7 +22,7 @@ export function loginController(loginElement, showMessage){
     try {
       const jwt = await loginUser(username, password)
       localStorage.setItem('token', jwt)
-      showMessage("Has logeado con éxito.");
+      showMessage("Has logeado con éxito, serás redirigido en 5 segundos...");
       //Redirigimos al index.html
       const redirect =  ()=> {window.location = '/';}
       setInterval(redirect, 5000);

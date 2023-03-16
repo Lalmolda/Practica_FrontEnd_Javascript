@@ -50,6 +50,16 @@
       "foto": "https://cdn-images.motor.es/image/m/800w.webp/fotos-noticias/2022/06/ferrari-nuevos-coches-electricos-202287701-1655143041_1.jpg",
       "userId": 1,
       "updatedAt": "2023-03-16T14:18:20.278Z"
+    },
+    {
+      "nombre": "Anuncio de usuario2",
+      "descripcion": "Yo solo puedo ver y borrar este anuncio!!",
+      "precio": "2222222",
+      "compraVenta": "venta",
+      "foto": "no",
+      "userId": 2,
+      "updatedAt": "2023-03-16T15:36:59.406Z",
+      "id": 5
     }
   ]
 }
